@@ -1,0 +1,11 @@
+
+https://stackoverflow.com/questions/51121136/the-connection-to-the-server-localhost8080-was-refused-did-you-specify-the-ri
+
+#######The connection to the server localhost:8080 was refused - did you specify the right host or port?
+   go to master machine, run the following cmd's
+    
+sudo mkdir ~/.kube
+sudo cp /etc/kubernetes/admin.conf ~/.kube/
+cd ~/.kube
+sudo mv admin.conf config
+sudo service kubelet restart
